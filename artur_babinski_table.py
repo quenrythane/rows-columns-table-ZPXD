@@ -33,3 +33,5 @@ tablica2(r, c)
 print()
 tablica3(r, c)
 print()
+
+#1
