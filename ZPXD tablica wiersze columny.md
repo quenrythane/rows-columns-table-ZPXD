@@ -1,4 +1,5 @@
 # _herodisiac
+```python
 a = 9
 for i in range(rows):
     temp = []
@@ -6,20 +7,28 @@ for i in range(rows):
         a += 1
         temp.append(a%10)
     print(*temp)
-
-
+```
+<br>
 
 # Artur_Babinski👑
+```python
 def tablica(rows, columns):
     numbers_list = [i % 10 for i in range(rows * columns)]
     result = [[] for row in range(rows)]  # create list of empty lists (each list is a row)
     [result[index // columns].append(str(number)) for index, number in enumerate(numbers_list)]  # fill the lists
     for lst in result:  # display the table 
         print(' '.join(lst))
-
-
+```
+```python
+def tablica2(rows, columns):
+    numbers_list = [i % 10 for i in range(rows * columns)]
+    for i in range((rows * columns) // columns):
+        print(*numbers_list[i * columns:(i + 1) * columns])
+```
+<br>
 
 # Bartek
+```python
 def kolejna(liczba):
     wynik = 0
     if liczba + 1 > 9:
@@ -44,10 +53,11 @@ while wiersz != 0:
     print(lista)
     lista = ''
     wiersz -= 1
-
-
+```
+<br>
 
 # Boomer
+```python
 kolumny = 3
 wiersze = 5
 def prs(kol, wier):
@@ -61,10 +71,12 @@ def prs(kol, wier):
    return str_d
 
 print(prs(kolumny, wiersze))
-
+```
+<br>
 
 
 # Czarny
+```python
 def gen_table(row, col):
     from itertools import cycle
     steps = 10 * row * col//10
@@ -74,10 +86,11 @@ def gen_table(row, col):
         if i % col == 0 and i != 0:
             print()
         print(next(iter_cycle), end=" ")
-
-
+```
+<br>
 
 # ika
+```python
 from itertools import cycle
 
 rows = int(input("Ile wierszy: "))
@@ -88,10 +101,11 @@ for i in range(rows):
     for j in range(columns):
         row.append(next(number_cycle))
     print(' '.join(row))
-
-
+```
+<br>
 
 # RafalK
+```python
 def funkcja(r, c):
    i=0
    for a in range(0, r):
@@ -105,10 +119,11 @@ def funkcja(r, c):
       print(*temp)
       temp.clear()
 funkcja(3,4)
-
-
+```
+<br>
 
 # Sebastian K.
+```python
 def arr(w, k):
     i = 0
     for y in range(w):
@@ -118,10 +133,11 @@ def arr(w, k):
             if i == 10:
                 i = 0
         print()
-
-
+```
+<br>
 
 # svenson
+```python
 def tablica(inputTable):
     numberOfALL = inputTable[0]*inputTable[1]
     tempDigit = 0
@@ -135,9 +151,11 @@ def tablica(inputTable):
         tempDigit += 1
         if tempDigit > 9:
             tempDigit = 0
-
+```
+<br>
 
 # Urbid
+```python
 def tablica (n, m):
   ret = []
   nice_list = [(lambda x: str(x%10))(x) for x in list(range(0,n*m+1))]
@@ -148,7 +166,5 @@ def tablica (n, m):
     start, end = end, end+m
 
   return "\n".join(ret)
-
-
-
-
+```
+<br>
