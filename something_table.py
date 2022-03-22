@@ -31,3 +31,5 @@ for x in range(1,row+1,1):
     print()
 
 
+# mew comment by Artur
+
